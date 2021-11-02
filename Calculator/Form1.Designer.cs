@@ -37,6 +37,7 @@ namespace Calculator
             this.txtSoB = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtKQ = new System.Windows.Forms.TextBox();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btCong
@@ -108,6 +109,16 @@ namespace Calculator
             this.txtKQ.Size = new System.Drawing.Size(257, 34);
             this.txtKQ.TabIndex = 2;
             // 
+            // btTru
+            // 
+            this.btTru.Location = new System.Drawing.Point(59, 309);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(143, 53);
+            this.btTru.TabIndex = 0;
+            this.btTru.Text = "Trừ";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
@@ -120,6 +131,7 @@ namespace Calculator
             this.Controls.Add(this.txtSoA);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.btCong);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -140,6 +152,7 @@ namespace Calculator
         private System.Windows.Forms.TextBox txtSoB;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtKQ;
+        private System.Windows.Forms.Button btTru;
     }
 }
 
